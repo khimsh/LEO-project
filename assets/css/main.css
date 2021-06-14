@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   height: 766px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -82,7 +83,47 @@ img {
   margin-right: 12px;
   width: 40px;
   height: 40px;
-  background: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  margin-bottom: 16px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+}
+.form__field {
+  display: flex;
+}
+.form__field:not(:last-child) {
+  margin-bottom: 8px;
+}
+.form__field label {
+  margin-right: 4px;
+  flex-grow: 1;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+.form__field select {
+  width: 100px;
+  cursor: pointer;
+}
+.form__field input[type=checkbox] {
+  margin-right: 4px;
+}
+.form__field input[type=checkbox] ~ label {
+  cursor: pointer;
+}
+.form__field button {
+  width: 100%;
+  cursor: pointer;
 }
 
 .footer {
@@ -152,39 +193,47 @@ img {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-}
-.tab-content__dashboard .devices-list {
-  flex-grow: 1;
+  background: #c4c4c4;
   padding: 12px;
 }
-.tab-content__dashboard .devices-list__item {
+.tab-content__dashboard .devices__list {
+  flex-grow: 1;
+}
+.tab-content__dashboard .devices__item {
   margin-bottom: 14px;
   padding: 10px;
   height: 87px;
   display: flex;
   background: #fbfbfb;
 }
-.tab-content__dashboard .devices-list__item figure {
+.tab-content__dashboard .devices__item figure {
   margin-right: 14px;
   width: 68px;
   height: 68px;
   border: 2px solid green;
   background: #c4c4c4;
 }
-.tab-content__dashboard .devices-list__id {
-  margin-bottom: 4px;
+.tab-content__dashboard .devices__meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tab-content__dashboard .devices__id {
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
 }
-.tab-content__dashboard .devices-list__name {
+.tab-content__dashboard .devices__name {
   font-size: 14px;
   line-height: 16px;
   color: #000000;
 }
-.tab-content__dashboard .devices-list {
-  background: #c4c4c4;
+.tab-content__dashboard .devices__stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */

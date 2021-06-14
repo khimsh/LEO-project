@@ -7,8 +7,8 @@
     <title>Document</title>
 
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -25,13 +25,23 @@
     <nav class="project-nav">
       <ul>
         <li data-tab-target="#deviceDashboard">
-          <span></span> Device Dashboard
+          <span>
+            <i class="medium material-icons">devices</i>
+          </span>
+          Device Dashboard
         </li>
         <li data-tab-target="#latencyAlerts">
-          <span></span> Latency and Alerts
+          <span><i class="medium material-icons">warning</i></span> Latency and
+          Alerts
         </li>
-        <li data-tab-target="#statsViewer"><span></span> Stats Viewer</li>
-        <li data-tab-target="#gameControls"><span></span> Game Controls</li>
+        <li data-tab-target="#statsViewer">
+          <span><i class="large material-icons">insert_chart</i></span> Stats
+          Viewer
+        </li>
+        <li data-tab-target="#gameControls">
+          <span><i class="medium material-icons">gamepad</i></span> Game
+          Controls
+        </li>
       </ul>
     </nav>
 
@@ -44,44 +54,101 @@
               <h2>Devices</h2>
 
               <div class="devices">
-                <div class="form"></div>
+                <!-- Form -->
+                <div class="form-wrapper">
+                  <form class="form">
+                    <div class="form__left">
+                      <div class="form__field">
+                        <label for="type">Type</label>
 
-                <div class="devices-list">
-                  <div class="devices-list__item">
+                        <select name="type" id="type">
+                          <option value="All">All</option>
+                          <option value="TX Station">TX Station</option>
+                          <option value="RX Sensor">RX Sensor</option>
+                          <option value="HUB">HUB</option>
+                          <option value="Master">Master</option>
+                        </select>
+                      </div>
+
+                      <div class="form__field">
+                        <label for="orderBy">Order By</label>
+                        <select name="orderBy" id="orderBy">
+                          <option value="All">All</option>
+                          <option value="TX Station">TX Station</option>
+                          <option value="RX Sensor">RX Sensor</option>
+                          <option value="HUB">HUB</option>
+                          <option value="Master">Master</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form__right">
+                      <div class="form__field">
+                        <input type="checkbox" id="update" />
+                        <label for="update">Update</label>
+                      </div>
+
+                      <div class="form__field">
+                        <button>Alerts</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- end Form -->
+
+                <div class="devices__list">
+                  <!-- Devices Item Type 1 -->
+                  <div class="devices__item devices__item--1">
                     <figure>
                       <img src="" alt="" />
                     </figure>
 
-                    <div class="devices-list__meta">
-                      <div class="devices-list__id">4D2F3F3D3F4F</div>
-                      <div class="devices-list__name">Custom name</div>
-                      <div class="devices-list__stats"></div>
+                    <div class="devices__meta">
+                      <div class="devices__id">4D2F3F3D3F4F</div>
+                      <div class="devices__name">Custom name</div>
+                      <div class="devices__stats">
+                        <div>
+                          <span class="devices__stats__percent">70</span>%
+                        </div>
+                        <div><span class="devices__stats__ms">7</span>ms</div>
+                      </div>
                     </div>
                   </div>
+                  <!-- end Devices Item Type 1 -->
 
-                  <div class="devices-list__item">
+                  <!-- Devices Item Type 2 -->
+                  <div class="devices__item devices__item--2">
                     <figure>
                       <img src="" alt="" />
                     </figure>
 
-                    <div class="devices-list__meta">
-                      <div class="devices-list__id">4D2F3F3D3F4F</div>
-                      <div class="devices-list__name">Custom name</div>
-                      <div class="devices-list__stats"></div>
+                    <div class="devices__meta">
+                      <div class="devices__id">4D2F3F3D3F4F</div>
+                      <div class="devices__name">Custom name</div>
+                      <div class="devices__stats">
+                        <div><span class="devices__stats__ma">450</span>mA</div>
+                      </div>
                     </div>
                   </div>
+                  <!-- end Devices Item Type 2 -->
 
-                  <div class="devices-list__item">
+                  <!-- Devices Item Type 3 -->
+                  <div class="devices__item devices__item--3">
                     <figure>
                       <img src="" alt="" />
                     </figure>
 
-                    <div class="devices-list__meta">
-                      <div class="devices-list__id">4D2F3F3D3F4F</div>
-                      <div class="devices-list__name">Custom name</div>
-                      <div class="devices-list__stats"></div>
+                    <div class="devices__meta">
+                      <div class="devices__id">4D2F3F3D3F4F</div>
+                      <div class="devices__name">Custom name</div>
+                      <div class="devices__stats">
+                        <div>
+                          <span class="">10</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <!-- end Devices Item Type 3 -->
                 </div>
               </div>
             </aside>
@@ -111,7 +178,7 @@
 
     <footer class="footer">
       <button id="openNav">
-        <i class="fas fa-bars"></i>
+        <i class="medium material-icons">menu</i>
       </button>
 
       <div class="footer__stats">

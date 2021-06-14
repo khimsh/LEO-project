@@ -30,6 +30,8 @@
     margin-right: 12px;
     width: 40px;
     height: 40px;
-    background: hsla(0, 0%, 77%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

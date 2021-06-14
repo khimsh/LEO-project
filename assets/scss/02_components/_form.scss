@@ -1,0 +1,44 @@
+.form-wrapper {
+  margin-bottom: 16px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+
+  &__field {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    label {
+      margin-right: 4px;
+      flex-grow: 1;
+      white-space: nowrap;
+      font-weight: bold;
+      font-size: 14px;
+      color: #000000;
+    }
+
+    select {
+      width: 100px;
+      cursor: pointer;
+    }
+
+    input[type='checkbox'] {
+      margin-right: 4px;
+
+      & ~ label {
+        cursor: pointer;
+      }
+    }
+
+    button {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}
