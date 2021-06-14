@@ -1,0 +1,76 @@
+@import '01_base/base-dir';
+@import '02_components/components-dir';
+
+.container {
+  padding: 16px;
+  height: 100%;
+  background: #fff;
+}
+
+.tab-content__dashboard {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 269px;
+  column-gap: 20px;
+
+  h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+    text-align: center;
+  }
+
+  aside {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .devices {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    &-list {
+      flex-grow: 1;
+      padding: 12px;
+
+      &__item {
+        margin-bottom: 14px;
+        padding: 10px;
+        height: 87px;
+        display: flex;
+        background: #fbfbfb;
+
+        figure {
+          margin-right: 14px;
+          width: 68px;
+          height: 68px;
+          border: 2px solid green;
+          background: hsla(0, 0%, 77%, 1);
+        }
+      }
+
+      &__id {
+        margin-bottom: 4px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+      }
+
+      &__name {
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+      }
+    }
+  }
+
+  .devices-list {
+    background: #c4c4c4;
+  }
+}

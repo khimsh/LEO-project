@@ -1,0 +1,38 @@
+.tabs {
+  height: 100%;
+}
+
+[data-tab-content] {
+  height: 100%;
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+#latencyAlerts {
+  .tab-content {
+    background: springgreen;
+  }
+}
+
+#statsViewer {
+  .tab-content {
+    background: blueviolet;
+  }
+}
+
+#gameControls {
+  .tab-content {
+    background: olivedrab;
+  }
+}
+
+.tab-content {
+  height: 100%;
+}
+
+.dashboard-content {
+  background: #c4c4c4;
+}

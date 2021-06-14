@@ -1,0 +1,45 @@
+.footer {
+  height: 48px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #c4c4c4;
+
+  #openNav {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: black;
+    cursor: pointer;
+
+    i {
+      font-size: 24px;
+      color: #fff;
+    }
+  }
+
+  &__stats {
+    display: flex;
+  }
+
+  &__stat {
+    &:not(:last-child) {
+      margin-right: 100px;
+    }
+  }
+
+  .ms {
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+  }
+
+  .connection {
+    margin-left: 8px;
+    font-weight: normal;
+    font-size: 24px;
+    color: #000000;
+  }
+}

@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  height: 766px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}

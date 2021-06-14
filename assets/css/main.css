@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  height: 766px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.tabs {
+  height: 100%;
+}
+
+[data-tab-content] {
+  height: 100%;
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+#latencyAlerts .tab-content {
+  background: springgreen;
+}
+
+#statsViewer .tab-content {
+  background: blueviolet;
+}
+
+#gameControls .tab-content {
+  background: olivedrab;
+}
+
+.tab-content {
+  height: 100%;
+}
+
+.dashboard-content {
+  background: #c4c4c4;
+}
+
+.project-nav {
+  position: absolute;
+  top: 0;
+  left: -282px;
+  width: 282px;
+  height: 766px;
+  background: #7a3e3e;
+  transition: left 0.15s ease-in;
+}
+.project-nav.openNav {
+  left: 0;
+}
+.project-nav li {
+  padding: 10px;
+  background: rgba(196, 196, 196, 0.36);
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.project-nav span {
+  display: block;
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  background: #c4c4c4;
+}
+
+.footer {
+  height: 48px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #c4c4c4;
+}
+.footer #openNav {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: black;
+  cursor: pointer;
+}
+.footer #openNav i {
+  font-size: 24px;
+  color: #fff;
+}
+.footer__stats {
+  display: flex;
+}
+.footer__stat:not(:last-child) {
+  margin-right: 100px;
+}
+.footer .ms {
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+}
+.footer .connection {
+  margin-left: 8px;
+  font-weight: normal;
+  font-size: 24px;
+  color: #000000;
+}
+
+.container {
+  padding: 16px;
+  height: 100%;
+  background: #fff;
+}
+
+.tab-content__dashboard {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 269px;
+  column-gap: 20px;
+}
+.tab-content__dashboard h2 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center;
+}
+.tab-content__dashboard aside {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tab-content__dashboard .devices {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.tab-content__dashboard .devices-list {
+  flex-grow: 1;
+  padding: 12px;
+}
+.tab-content__dashboard .devices-list__item {
+  margin-bottom: 14px;
+  padding: 10px;
+  height: 87px;
+  display: flex;
+  background: #fbfbfb;
+}
+.tab-content__dashboard .devices-list__item figure {
+  margin-right: 14px;
+  width: 68px;
+  height: 68px;
+  border: 2px solid green;
+  background: #c4c4c4;
+}
+.tab-content__dashboard .devices-list__id {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.tab-content__dashboard .devices-list__name {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.tab-content__dashboard .devices-list {
+  background: #c4c4c4;
+}
+
+/*# sourceMappingURL=main.css.map */

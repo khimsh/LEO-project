@@ -1,0 +1,35 @@
+.project-nav {
+  position: absolute;
+  top: 0;
+  left: -282px;
+  width: 282px;
+  height: 766px;
+  background: hsla(0, 33%, 36%, 1);
+  transition: left 0.15s ease-in;
+
+  &.openNav {
+    left: 0;
+  }
+
+  li {
+    padding: 10px;
+    background: rgba(196, 196, 196, 0.36);
+    border: 1px solid #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+  }
+
+  span {
+    display: block;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    background: hsla(0, 0%, 77%, 1);
+  }
+}

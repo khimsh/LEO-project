@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <script async src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <nav class="project-nav">
+      <ul>
+        <li data-tab-target="#deviceDashboard">
+          <span></span> Device Dashboard
+        </li>
+        <li data-tab-target="#latencyAlerts">
+          <span></span> Latency and Alerts
+        </li>
+        <li data-tab-target="#statsViewer"><span></span> Stats Viewer</li>
+        <li data-tab-target="#gameControls"><span></span> Game Controls</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="tabs">
+        <div id="deviceDashboard" class="active" data-tab-content>
+          <div class="tab-content tab-content__dashboard">
+            <div class="dashboard-content"></div>
+            <aside>
+              <h2>Devices</h2>
+
+              <div class="devices">
+                <div class="form"></div>
+
+                <div class="devices-list">
+                  <div class="devices-list__item">
+                    <figure>
+                      <img src="" alt="" />
+                    </figure>
+
+                    <div class="devices-list__meta">
+                      <div class="devices-list__id">4D2F3F3D3F4F</div>
+                      <div class="devices-list__name">Custom name</div>
+                      <div class="devices-list__stats"></div>
+                    </div>
+                  </div>
+
+                  <div class="devices-list__item">
+                    <figure>
+                      <img src="" alt="" />
+                    </figure>
+
+                    <div class="devices-list__meta">
+                      <div class="devices-list__id">4D2F3F3D3F4F</div>
+                      <div class="devices-list__name">Custom name</div>
+                      <div class="devices-list__stats"></div>
+                    </div>
+                  </div>
+
+                  <div class="devices-list__item">
+                    <figure>
+                      <img src="" alt="" />
+                    </figure>
+
+                    <div class="devices-list__meta">
+                      <div class="devices-list__id">4D2F3F3D3F4F</div>
+                      <div class="devices-list__name">Custom name</div>
+                      <div class="devices-list__stats"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <div id="latencyAlerts" data-tab-content>
+          <div class="tab-content">
+            <h2>Latency and Alerts</h2>
+            <p>some content</p>
+          </div>
+        </div>
+        <div id="statsViewer" data-tab-content>
+          <div class="tab-content">
+            <h2>Stats Viewer</h2>
+            <p>some content</p>
+          </div>
+        </div>
+        <div id="gameControls" data-tab-content>
+          <div class="tab-content">
+            <h2>Game Controls</h2>
+            <p>some content</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <button id="openNav">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="footer__stats">
+        <div class="footer__stat">
+          <span class="ms">5ms</span> &mdash;
+          <span class="connection">Connected to DEV game</span>
+        </div>
+        <div class="footer__stat">
+          <span class="ms">5ms</span> &mdash;
+          <span class="connection">Connected to MT Master</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
