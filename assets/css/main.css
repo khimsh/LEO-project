@@ -199,6 +199,19 @@ img {
 }
 .tab-content__dashboard .devices__list {
   flex-grow: 1;
+  overflow-y: scroll;
+  height: 600px;
+}
+.tab-content__dashboard .devices__list::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 4px;
+}
+.tab-content__dashboard .devices__list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.tab-content__dashboard .devices__list::-webkit-scrollbar-thumb {
+  background-color: #a81f1f;
+  outline: 1px solid #3a70a7;
 }
 .tab-content__dashboard .devices__item {
   margin-bottom: 14px;
