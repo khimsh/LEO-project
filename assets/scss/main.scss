@@ -63,10 +63,15 @@
     }
 
     &__id {
+      display: flex;
+      align-items: center;
       font-weight: bold;
       font-size: 18px;
-      line-height: 21px;
       color: #000000;
+
+      input[type='checkbox'] {
+        margin-right: 4px;
+      }
     }
 
     &__name {
