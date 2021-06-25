@@ -3,7 +3,7 @@
   top: 0;
   left: -282px;
   width: 282px;
-  height: 766px;
+  height: calc(100% - 48px);
   background: hsla(0, 33%, 36%, 1);
   transition: left 0.15s ease-in;
 

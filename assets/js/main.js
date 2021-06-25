@@ -6,11 +6,13 @@ const nav = document.querySelector('.project-nav');
 document.querySelector('.container').addEventListener('click', (e) => {
   if (!nav.contains(e.target) && nav.classList.contains('openNav')) {
     nav.classList.remove('openNav');
+    openNavBtn.innerHTML = '<i class="medium material-icons">menu</i>';
   }
 });
 
 openNavBtn.addEventListener('click', (e) => {
   nav.classList.add('openNav');
+  openNavBtn.innerHTML = '<i class="medium material-icons">close</i>';
 });
 
 const tabs = document.querySelectorAll('[data-tab-target]');
@@ -24,5 +26,6 @@ tabs.forEach((tab) => {
     });
     target.classList.add('active');
     nav.classList.remove('openNav');
+    openNavBtn.innerHTML = '<i class="medium material-icons">menu</i>';
   });
 });
