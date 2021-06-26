@@ -261,5 +261,14 @@ img {
   font-size: 18px;
   color: #000000;
 }
+.tab-content__dashboard .devices__stats__numbers {
+  display: flex;
+}
+.tab-content__dashboard .devices__stats__numbers img {
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=main.css.map */

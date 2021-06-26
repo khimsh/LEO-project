@@ -111,6 +111,17 @@
 
       font-size: 18px;
       color: #000000;
+
+      &__numbers {
+        display: flex;
+
+        img {
+          margin-right: 4px;
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+        }
+      }
     }
   }
 }

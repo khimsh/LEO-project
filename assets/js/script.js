@@ -6,13 +6,6 @@ const nav = document.querySelector('.project-nav');
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content]');
 
-// Close Navigation on outside click
-document.querySelector('.container').addEventListener('click', (e) => {
-  if (!nav.contains(e.target) && nav.classList.contains('openNav')) {
-    closeNav();
-  }
-});
-
 // Open Navigation
 openNavBtn.addEventListener('click', (e) => {
   if (!openNavBtn.classList.contains('opened')) {
@@ -24,7 +17,14 @@ openNavBtn.addEventListener('click', (e) => {
   }
 });
 
-// Change Tabs & Close Navigation if tab is clicked
+// Close Navigation on outside click
+document.querySelector('.container').addEventListener('click', (e) => {
+  if (!nav.contains(e.target) && nav.classList.contains('openNav')) {
+    closeNav();
+  }
+});
+
+// Change Tabs & Close Navigation when tab is clicked
 tabs.forEach((tab) => {
   tab.addEventListener('click', () => {
     const target = document.querySelector(tab.dataset.tabTarget);
